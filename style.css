@@ -112,9 +112,14 @@ body {
     transform: scale(0.1);
 }
 .circle:hover {
-    transform: scale(0.5);
+    /*transform: scale(0.5);
     transition-duration: 2s;
-    
+    animation-delay: 2s;*/
+    animation-name: circle;
+
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
 }
 .main {
     width: 100%;
@@ -134,4 +139,16 @@ body {
     line-height: 1.2em;
     margin-top: 232px;
     font-size: 44px;
+}
+
+@keyframes  circle{
+    0% {
+        transform: scale(0.1);
+    }
+    /*50% {
+        transform: scale(0.5);
+    }*/
+    100%{
+        transform: scale(0.5);
+    }
 }

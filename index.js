@@ -15,3 +15,16 @@ dropdown.addEventListener('click', () => {
     }, 50);
     
 });
+
+const circle = document.querySelector('circle');
+
+circle.addEventListener('mouseover', event => {
+    let e = window.event;
+    setInterval(() => {
+        let posX = e.clientX;
+        let posY = e.clientY;
+
+        console.log(`X: ${posX} Y: ${posY}`);   
+    }, 2000);
+    
+});
