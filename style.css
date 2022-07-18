@@ -15,11 +15,11 @@
     padding: 0;
 }
 body {
-    background: linear-gradient(-45deg, #ee7752, #FF7F49, #EC7C26, #FFA343);
+    background: linear-gradient(-45deg, #FF7F50, 	#FF6347, #FF4500, #FFA500,#FF8C00);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
-
+/*#ee7752, #FF7F49, #EC7C26, #FFA343)*/
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -107,29 +107,30 @@ body {
 .circle {
     position: absolute;
     z-index: 999;
-    top: -263px;
-    left: 472px;
-    transform: scale(0.1);
+    top: -203px;
+    left: 426px;
+    transform: scale(0.6);
 }
-.circle:hover {
+/*.circle:hover {
     /*transform: scale(0.5);
     transition-duration: 2s;
-    animation-delay: 2s;*/
+    animation-delay: 2s;
     animation-name: circle;
 
     animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: 2;
-}
+}*/
 .main {
     width: 100%;
     max-width: 1920px;
     display: flex;
     flex-direction: column;
-    height: 750px;
 }
 .home-text-part {
-
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
 }
 .home-text-header {
     max-width: 520px;
@@ -140,15 +141,25 @@ body {
     margin-top: 232px;
     font-size: 44px;
 }
-
+.home-text {
+    max-width: 400px;
+    font-size: unset;
+    color: #fff;
+    line-height: 1.4em;
+    margin-top: 27px;
+}
+.content-part {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1920px;
+    height: 100px;
+}
 @keyframes  circle{
     0% {
-        transform: scale(0.1);
+        transform: scale(0.5);
     }
-    /*50% {
-        transform: scale(0.5);
-    }*/
+    
     100%{
-        transform: scale(0.5);
+        transform: scale(0.1);
     }
 }
